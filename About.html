@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style1.css" >
+    <style>
+    #container{
+        display: grid;
+        grid-template-columns: 100px 100px 100px 100px;
+        gap: 10px;
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+        background-color: #2196F3;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      #container > #p {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid black;
+        text-align: center;
+        justify-content: center;
+        margin-top: 50px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        font-size: 30px;
+    }
+    </style>
+    <script type ="text/javascript">
+        window.onload = function() {
+            what();
+            function what(){
+              var d = new Date();
+              
+                document.getElementById('hr').innerHTML = d.getHours();
+                document.getElementById('min').innerHTML = d.getMinutes()+"Min";
+                document.getElementById('sec').innerHTML = d.getSeconds()+"Sec";
+                var c = document.getElementById('hr').innerHTML = d.getHours();
+                    if (c >= 12){
+                        for(var i = 0 ; i <=c ; i++){
+                            document.getElementById('m').innerHTML = "PM" ;
+                            document.getElementById('hr').innerHTML = d.getHours(i)+"Hr";
+                        }
+                    }
+                    else{
+                        for(var i = 0 ; i <=12 ; i++){
+                            document.getElementById('m').innerHTML = "AM" ;
+                            document.getElementById('hr').innerHTML = d.getHours(i)+"Hr";
+                        }
+                    }
+                //document.getElementById('msec').innerHTML = d.getMilliseconds();
+                setTimeout(what, 1);
+            };
+        }
+        </script>
+</head>
+<body>
+    <header>
+        <marquee>
+            <h1>Welcome to My Portfolio</h1>
+        </marquee>
+        <nav>
+            <a href="About.html" >About</a>
+            <!--<a href="Projects.html" >Projects</a> -->
+            <a href="Education.html" >Education</a>
+            <a href="Contact.html" >Contact</a>
+        </nav>
+    </header>
+    <section>
+        <img src="Profile.jpg" class="im" />
+    </section>
+    <aside>
+        <p>I am Durga Pavan. I am Web Designer and Web Developer. This Portfolio is created by it's my Own.</p>
+    </aside>
+    <div id="container">
+        <p  id="hr" ></p>
+        <p  id="min" ></p>
+        <p  id="sec" ></p>
+        <p id="m" ></p>
+        <!--time-->
+     </div>
+     
+</body>
+</html>
