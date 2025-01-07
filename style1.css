@@ -70,8 +70,8 @@ section{
     box-shadow: 6px 12px 6px black;
 }
 aside{
-    width: 175px;
-    height: 120px;
+    width: 150px;
+    height: 60px;
     margin-left: 250px;
     border-radius: 10px 40px;
     background-color: black;
@@ -109,7 +109,7 @@ p{
         width: 100px;
       }
 }
-@media screen and (max-width: 1024px){
+/* @media screen and (max-width: 1024px){
     body{
         width:100%;
     }
@@ -198,5 +198,5 @@ p{
         border-radius: 50%;
         font-size: 30px;
     }
-}
+} */
     
