@@ -21,7 +21,7 @@ body{
         width:auto;
         height:auto;
 } */
-    @media only screen and (max-width: 1000px){
+    @media only screen and (max-width: 850px){
         body{
             width:850px;
         }
