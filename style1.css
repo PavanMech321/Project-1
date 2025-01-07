@@ -22,7 +22,10 @@ body{
         height:auto;
 } */
     @media only screen and (max-width: 1000px){
-header{
+        body{
+            width:768px;
+        }
+    header{
         height: 15%;
         width: 100%;
         background-color: black;
