@@ -26,7 +26,12 @@ body{
         height:auto;
 }   
 } */
-    header{
+body{
+    width:100%;
+    height:auto;
+}
+
+header{
         height: 150px;
         width: auto;
         background-color: black;
