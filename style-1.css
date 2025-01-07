@@ -1,6 +1,6 @@
 
 body{
-width:125%;
+width:100%;
 }
 header{
         height: 150px;
@@ -33,7 +33,7 @@ header{
         transition-duration: 1.5s;
     }
     section{
-        width: 40%;
+        width: 100%;
         margin-top: 100px;
         height: 350px;
         border-radius: 20px;
@@ -45,7 +45,7 @@ header{
         box-shadow: 10px 20px 10px black;
     }
     aside{
-        width: 800px;
+        width: 60%;
         height: 120px;
         margin-top: -250px;
         margin-left: 350px;
