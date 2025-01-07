@@ -26,18 +26,9 @@ body{
         height:auto;
 }   
 } */
- @media screen and (max-width : 400px){
-     html, body {
-         width: 100%; /* Full width of the viewport */
-         height: auto; /* 50% of the viewport height */
-}
-}
- @media screen and (max-width: 100%){
-     html, body {
-         width: 100%; /* Full width of the viewport */
-         height: auto; /* 50% of the viewport height */
-}
-} 
+html, body {
+         width: 400px; /* Full width of the viewport */
+         height: auto;
 header{
         height: 150px;
         width: auto;
