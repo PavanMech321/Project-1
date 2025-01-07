@@ -26,36 +26,37 @@ body{
         height:auto;
 }   
 } */
-header{
-    height: 150px;
-    width: auto;
-    background-color: black;
-    color: aliceblue;
-}
-nav{
-    margin-top: 100px;
-    width: auto;
-    height: 40px;
-    word-spacing: 15px;
-    background-color: darkcyan;
-}
-a{
-    color: aliceblue;
-    text-decoration: none;
-    word-spacing: 15px;
-    font-size: x-large;
-    margin-left: 200px;
-    transition-duration: 1s;
-}
-.im{
-    width: 180px;
-    height: 180px;
-    margin-top: 40px;
-    margin-left: 100px;
-    border-radius: 50%;
-    filter: brightness(50%);
-    transition-duration: 1.5s;
-}
+@media screen and (min-width : 768px) and (max-width : 1023px){
+    header{
+        height: 150px;
+        width: auto;
+        background-color: black;
+        color: aliceblue;
+    }
+    nav{
+        margin-top: 100px;
+        width: auto;
+        height: 40px;
+        word-spacing: 15px;
+        background-color: darkcyan;
+    }
+    a{
+        color: aliceblue;
+        text-decoration: none;
+        word-spacing: 15px;
+        font-size: x-large;
+        margin-left: 200px;
+        transition-duration: 1s;
+    }
+    .im{
+        width: 180px;
+        height: 180px;
+        margin-top: 40px;
+        margin-left: 100px;
+        border-radius: 50%;
+        filter: brightness(50%);
+        transition-duration: 1.5s;
+    }
 section{
     width: auto;
     margin-top: 100px;
@@ -80,7 +81,7 @@ p{
     color: aliceblue;
     font-size:xx-large;
 }
-a:hover{
+    a:hover{
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -88,4 +89,63 @@ a:hover{
     background-color: antiquewhite;
     border-radius: 10px;
     color: blue;
+    }
+}
+@media only screen 
+and (min-width : 1224px) {
+    header{
+        height: 40px;
+        word-spacing: 15px;
+        background-color: darkcyan;
+    }
+    a{
+        color: aliceblue;
+        text-decoration: none;
+        word-spacing: 15px;
+        font-size: x-large;
+        margin-left: 200px;
+        transition-duration: 1s;
+    }
+    .im{
+        width: 180px;
+        height: 180px;
+        margin-top: 40px;
+        margin-left: 100px;
+        border-radius: 50%;
+        filter: brightness(50%);
+        transition-duration: 1.5s;
+    }
+section{
+    width: auto;
+    margin-top: 100px;
+    height: 350px;
+    border-radius: 20px;
+    background-color: bisque;
+}
+.im:hover{
+    transform: scale(1.5);
+    filter: brightness(100%);
+    box-shadow: 10px 20px 10px black;
+}
+aside{
+    width: 800px;
+    height: 120px;
+    margin-top: -250px;
+    margin-left: 350px;
+    border-radius: 10px 40px;
+    background-color: black;
+}
+p{
+    color: aliceblue;
+    font-size:xx-large;
+}
+    a:hover{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 30px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    color: blue;
+    }
 }
