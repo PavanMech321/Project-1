@@ -70,8 +70,8 @@ section{
     box-shadow: 6px 12px 6px black;
 }
 aside{
-    width: 150px;
-    height: 60px;
+    width: 50%;
+    height: 10%;
     margin-left: 250px;
     border-radius: 10px 40px;
     background-color: black;
