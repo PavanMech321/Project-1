@@ -26,13 +26,13 @@ body{
         height:auto;
 }   
 } */
- @media screen and (min-width : 0px) and (max-width : 767px){
+ @media screen and (max-width : 767px){
      html, body {
          width: 100%; /* Full width of the viewport */
          height: auto; /* 50% of the viewport height */
 }
 }
- @media screen and (min-width: 1024px){
+ @media screen and (max-width: 100%){
      html, body {
          width: 100%; /* Full width of the viewport */
          height: auto; /* 50% of the viewport height */
