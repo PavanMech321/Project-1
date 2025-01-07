@@ -26,10 +26,18 @@ body{
         height:auto;
 }   
 } */
-html, body {
-    width: 100%; /* Full width of the viewport */
-    height: 50vh; /* 50% of the viewport height */
+ @media screen and (min-width : 0px) and (max-width : 767px){
+     html, body {
+         width: 100%; /* Full width of the viewport */
+         height: auto; /* 50% of the viewport height */
 }
+}
+ @media screen and (min-width: 1024px){
+     html, body {
+         width: 100%; /* Full width of the viewport */
+         height: auto; /* 50% of the viewport height */
+}
+} 
 header{
         height: 150px;
         width: auto;
