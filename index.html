@@ -31,10 +31,7 @@
     </style>
     <script type ="text/javascript">
 
-        var height = $(window).height();//gets height from device
-        var width = $(window).width(); //gets width from device
-        $("#body").width(width+"px");
-        $("#body").height(height+"px");
+        document.getElementById("body").style.setProperty("--vh", window.innerHeight * 0.01 + "px");
         
         window.onload = function() {
             what();
