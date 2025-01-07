@@ -27,8 +27,8 @@ body{
 }   
 } */
 html, body {
-         width: 400px; /* Full width of the viewport */
-         height: auto;
+         width: 1080px; /* Full width of the viewport */
+         height: 2460px;
 header{
         height: 150px;
         width: auto;
