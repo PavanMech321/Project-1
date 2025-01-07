@@ -27,8 +27,8 @@ body{
 }   
 } */
 body{
-    max-width: fit-content;
-    height: fit-content;
+    max-width: min-content;
+    height: min-content;
 }
 
 header{
