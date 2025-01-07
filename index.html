@@ -6,8 +6,7 @@
     <title>About</title>
     <!-- <link rel="stylesheet" href="style1.css" > -->
     <link rel="stylesheet" href="style-1.css" >
-    <script type ="text/javascript">
-        
+    <script type ="text/javascript"> 
         window.onload = function() {
             what();
             function what(){
@@ -17,12 +16,15 @@
                 document.getElementById('sec').innerHTML = d.getSeconds()+"Sec";
                 var c = document.getElementById('hr').innerHTML = d.getHours();
                     if (c >= 12){
-                        document.getElementById('m').innerHTML = "PM" ;
-                        document.getElementById('hr').innerHTML = d.getHours()+"Hr";
+                        for (var i = 0; i = 12; i++){
+                            document.getElementById('m').innerHTML = "PM" ;
+                            document.getElementById('hr').innerHTML = d.getHours(i)+"Hr";
+                        }
                     }
                     else{
-                        document.getElementById('m').innerHTML = "AM" ;
-                        document.getElementById('hr').innerHTML = d.getHours()+"Hr";
+                        for (var i = 0; i<=12; i++){
+                            document.getElementById('m').innerHTML = "AM" ;
+                            document.getElementById('hr').innerHTML = d.getHours(i)+"Hr";
                         }
                     }
                 //document.getElementById('msec').innerHTML = d.getMilliseconds();
