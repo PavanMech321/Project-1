@@ -110,7 +110,10 @@ p{
       }
 }
 @media screen and (max-width: 1300px){
+    body{
 
+        width:100%;
+    }
      header{
         height: 150px;
         width: auto;
