@@ -17,10 +17,8 @@
                 document.getElementById('sec').innerHTML = d.getSeconds()+"Sec";
                 var c = document.getElementById('hr').innerHTML = d.getHours();
                     if (c >= 12){
-                        for(var i = 0 ; i <=12 ; i++){
-                            document.getElementById('m').innerHTML = "PM" ;
-                            document.getElementById('hr').innerHTML = d.getHours(i)+"Hr";
-                        }
+                        document.getElementById('m').innerHTML = "PM" ;
+                        document.getElementById('hr').innerHTML = d.getHours()+"Hr";
                     }
                     else{
                         document.getElementById('m').innerHTML = "AM" ;
