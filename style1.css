@@ -1,4 +1,17 @@
-header{
+@media screen and (min-width : 0px) and (max-width : 767px){
+/*Style*/
+}
+
+@media screen and (min-width : 768px) and (max-width : 1023px){
+/*Style*/
+}
+
+@media screen and (min-width: 1024px){
+/*Style*/
+}
+body{
+    
+}header{
     height: 150px;
     width: auto;
     background-color: black;
