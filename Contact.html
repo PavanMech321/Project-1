@@ -103,7 +103,7 @@
             form{
                 text-align: center;
                 width:200px;
-                height: 150px;
+                height: 250px;
                 border-radius: 10px 40px;
                 background-color: white;
                 color: black;
@@ -149,16 +149,16 @@
 </head>
 <body>
    <section>
-    <form method="POST" id="form">
+    <form method="POST" action="https://api.web3forms.com/submit" >
 
         <input type="hidden" name="access_key" value="500128f8-c38f-4751-89ae-3050797f2016">
     
-        <input type="text" name="name" required>
-        <input type="email" name="email" required>
+        <input type="text" name="name" placeholder="Enter name" required>
+        <input type="email" name="email" placeholder="Enter Email" required>
         <textarea name="message" required></textarea>
         <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
     
-        <button type="submit">Submit Form</button>
+        <button type="submit" onclick="result()">Submit Form</button>
     
         <div id="result"></div>
     
@@ -167,48 +167,17 @@
     <script>
     const form = document.getElementById('form');
     const result = document.getElementById('result');
-    
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const formData = new FormData(form);
-      const object = Object.fromEntries(formData);
-      const json = JSON.stringify(object);
-      result.innerHTML = "<h1>Please wait ....</h1>"
-    
-        fetch('https://api.web3forms.com/submit', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: json
-            })
-            .then(async (response) => {
-                let json = await response.json();
-                if (response.status == 200) {
-                    result.innerHTML = "<h2 style="color : blue ; text-align : center ;">Form submitted successfully</h2>";
-                    result.style.background = "black" ;
-                    result.style.color = "white" ;
-                    result.style.width = "20%" ;
-                    result.style.height = "20%" ;
-                    border-style.radius = "15px" ;
-                    
-                } else {
-                    console.log(response);
-                    result.innerHTML = json.message;
-                }
-            })
-            .catch(error => {
-                console.log(error);
-                result.innerHTML = "Something went wrong!";
-            })
-            .then(function() {
-                form.reset();
-                setTimeout(() => {
-                    result.style.display = "none";
-                }, 3000);
-            });
-    });
+
+        function result() {
+            result.innerHTML = "<h2 style="color : blue ; text-align : center ;">Form submitted successfully</h2>";
+            result.style.background = "black" ;
+            result.style.color = "white" ;
+            result.style.width = "20%" ;
+            result.style.height = "50%" ;
+            result.style.borderRadius = "15px" ;
+            result.style.textAlign = "center" ;
+            
+        }
     </script>
    </section>
 </body>
