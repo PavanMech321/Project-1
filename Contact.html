@@ -34,7 +34,7 @@
             form{
                 text-align: center;
                 width:150px;
-                height: 150px;
+                height:150px;
                 border-radius: 10px 30px;
                 background-color: white;
                 color: black;
@@ -50,6 +50,21 @@
                 background-color : black;
                 color:white;
                 text-align: center;
+            }
+            textarea {
+                width : 80px ;
+                height : 80px ;
+                border-radius : 10px ;
+                background-color : white;
+                color : blue ;
+            }
+            textarea : hover{
+                width : 80px ;
+                height : 80px ;
+                border-radius : 10px ;
+                background-color : black ;
+                color : white ;
+                
             }
             button{
                 background-color: blue;
@@ -87,15 +102,16 @@
             }
             form{
                 text-align: center;
-                width:400px;
-                height: 400px;
+                width:200px;
+                height: 150px;
                 border-radius: 10px 40px;
                 background-color: white;
                 color: black;
-                margin-top: 25%;
-                margin-left: 25%;
+                margin-top: 30%;
+                margin-left: 30%;
             }
             input{
+                border-radius : 10px ;
                 background-color : white;
                 color:black;
                 text-align: center;
@@ -104,6 +120,21 @@
                 background-color : black;
                 color:white;
                 text-align: center;
+            }
+            textarea {
+                width : 80px ;
+                height : 80px ;
+                border-radius : 10px ;
+                background-color : white;
+                color : blue ;
+            }
+            textarea : hover{
+                width : 80px ;
+                height : 80px ;
+                border-radius : 10px ;
+                background-color : black ;
+                color : white ;
+                
             }
             button{
                 background-color: blue;
@@ -156,7 +187,11 @@
                 let json = await response.json();
                 if (response.status == 200) {
                     result.innerHTML = "<h2 style="color : blue ; text-align : center ;">Form submitted successfully</h2>";
-                    result.style = "background-color : black; color: color; width: 250px; height : 250px; text-align : center; border-radius : 15px ; " ;
+                    result.style.background = "black" ;
+                    result.style.color = "white" ;
+                    result.style.width = "20%" ;
+                    result.style.height = "20%" ;
+                    border-style.radius = "15px" ;
                     
                 } else {
                     console.log(response);
